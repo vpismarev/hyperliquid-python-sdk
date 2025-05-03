@@ -66,7 +66,7 @@ class LP(S3):
 
 if __name__ == "__main__":
     # main()
-    lp = LP(aws_access_key_id='AKIAQD6N3F7C4UGGJS2O',
-            aws_secret_access_key='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',
+    lp = LP(aws_access_key_id='aaa',
+            aws_secret_access_key='bbb',
             coin="UETH/USDC")
     lp.subscribe()
