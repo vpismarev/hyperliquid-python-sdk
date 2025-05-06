@@ -1,9 +1,6 @@
 services:
-  vector:
-    image: timberio/vector:0.39.0-debian
-    restart: always
+  hyperliquid_dumper:
+    build: .
+    image: hyperliquid_dumper:latest
     ports:
-      - "8686:9000"
-    volumes:
-      - ./vector/data:/etc/vector/data
-      - ./vector/conf/vector.yaml:/etc/vector/vector.yaml
+      - "8686:8686"
