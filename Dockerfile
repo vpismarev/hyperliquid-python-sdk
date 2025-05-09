@@ -8,5 +8,3 @@ WORKDIR /app
 
 RUN poetry install
 RUN pip install hyperliquid-python-sdk
-
-CMD ["python3", "basic_ws.py"]

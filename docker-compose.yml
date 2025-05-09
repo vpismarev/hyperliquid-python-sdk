@@ -4,3 +4,10 @@ services:
     image: hyperliquid_dumper:latest
     ports:
       - "8686:8686"
+    command: python3 hype.py
+  binance_dumper:
+    build: .
+    image: binance_dumper:latest
+    ports:
+      - "8687:8686"
+    command: python3 binance.py

@@ -1,0 +1,22 @@
+sources:
+  socket_source:
+    type: socket
+    address: 0.0.0.0:9000
+    mode: tcp
+    path: /path/to/socket
+sinks:
+  s3_sink:
+    type: aws_s3
+    inputs:
+      - socket_source
+    bucket: "pvv-crypto-storage"
+    key_prefix: "data/book/hype/dt=%F/data_"
+    compression: gzip
+    filename_extension: "json.gz"
+    filename_time_format: "%s"
+    encoding:
+      codec: "json"
+    region: "us-east-1"
+    auth:
+      access_key_id: ""
+      secret_access_key: ""

@@ -10,7 +10,7 @@ sinks:
     inputs:
       - socket_source
     bucket: "pvv-crypto-storage"
-    key_prefix: "data/book/dt=%F/data_"
+    key_prefix: "data/book/binance/dt=%F/data_"
     compression: gzip
     filename_extension: "json.gz"
     filename_time_format: "%s"
