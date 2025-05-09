@@ -36,6 +36,11 @@ def setup_logging():
 if __name__ == "__main__":
     setup_logging()
     lp = LP()
-    lp.subscribe(coin="ETH")
     lp.subscribe(coin="BTC")
+    lp.subscribe(coin="ETH")
     lp.subscribe(coin="SOL")
+    lp.subscribe(coin="HYPE")
+    lp.subscribe(coin="UBTC/USDC")
+    lp.subscribe(coin="UETH/USDC")
+    lp.subscribe(coin="USOL/USDC")
+    lp.subscribe(coin="HYPE/USDC")
