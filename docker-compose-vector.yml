@@ -1,0 +1,17 @@
+services:
+  vector-hype:
+    image: timberio/vector:0.39.0-debian
+    restart: always
+    ports:
+      - "8686:9000"
+    volumes:
+      - ./vector/data:/etc/vector/data
+      - ./vector/conf/vector_hype.yaml:/etc/vector/vector.yaml
+  vector-binance:
+    image: timberio/vector:0.39.0-debian
+    restart: always
+    ports:
+      - "8687:9001"
+    volumes:
+      - ./vector/data:/etc/vector/data
+      - ./vector/conf/vector_binance.yaml:/etc/vector/vector.yaml

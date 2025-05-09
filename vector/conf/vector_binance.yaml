@@ -1,7 +1,7 @@
 sources:
   socket_source:
     type: socket
-    address: 0.0.0.0:9000
+    address: 0.0.0.0:9001
     mode: tcp
     path: /path/to/socket
 sinks:

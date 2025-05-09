@@ -1,9 +1,0 @@
-services:
-  vector:
-    image: timberio/vector:0.39.0-debian
-    restart: always
-    ports:
-      - "8687:9000"
-    volumes:
-      - ./vector/data:/etc/vector/data
-      - ./vector/conf/vector_binance.yaml:/etc/vector/vector.yaml
