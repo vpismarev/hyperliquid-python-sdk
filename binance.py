@@ -109,7 +109,7 @@ class BinanceOrderBookWebSocket:
 
 if __name__ == "__main__":
     # Configuration
-    symbols = ["btcusdc", "ethusdc"]  # Trading pair
+    symbols = ["btcusdc", "ethusdc", "solusdc"]  # Trading pair
     update_speed = "100ms"  # Options: "100ms" or "1000ms"
 
     try:
